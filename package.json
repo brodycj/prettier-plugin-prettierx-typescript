@@ -8,7 +8,8 @@
     "prettier-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check sample.js",
     "prettier-correct-typescript-sample": "prettier --config ./correct-typescript-sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check correct-typescript-sample.ts",
     "lint-sample": "standard sample.js",
-    "test": "npm run prettier-index && npm run lint-sample && npm run prettier-sample && npm run prettier-correct-typescript-sample"
+    "lint-correct-typescript-sample": "standardx --parser @typescript-eslint/parser --plugin @typescript-eslint/eslint-plugin  correct-typescript-sample.ts",
+    "test": "npm run prettier-index && npm run lint-sample && npm run prettier-sample && npm run lint-correct-typescript-sample && npm run prettier-correct-typescript-sample"
   },
   "author": "@brodybits (Christopher J. Brody) <chris@brody.consulting>",
   "license": "MIT",
@@ -17,7 +18,10 @@
     "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
     "prettier": "^1.19.1",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "standardx": "^5.0.0"
   }
 }
