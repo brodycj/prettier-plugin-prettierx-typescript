@@ -1,18 +1,20 @@
 {
-  "name": "prettier-plugin-prettierx-babel",
+  "name": "prettier-plugin-prettierx-typescript",
   "version": "0.0.1-dev",
   "description": "TBD",
   "main": "index.js",
   "scripts": {
     "prettier-index": "prettier --check index.js",
-    "prettier-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-babel --check sample.js",
+    "prettier-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check sample.js",
+    "prettier-correct-typescript-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check correct-typescript-sample.ts",
     "lint-sample": "standard sample.js",
     "test": "npm run prettier-index && npm run lint-sample && npm run prettier-sample"
   },
   "author": "@brodybits (Christopher J. Brody) <chris@brody.consulting>",
   "license": "MIT",
   "dependencies": {
-    "prettierx": "^0.9.0"
+    "prettierx": "^0.9.0",
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
