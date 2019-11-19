@@ -1,0 +1,7 @@
+{
+  yieldStarSpacing: true,
+  generatorStarSpacing: true,
+  spaceBeforeFunctionParen: true,
+  singleQuote: true,
+  semi: false
+}

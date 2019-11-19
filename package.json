@@ -6,9 +6,9 @@
   "scripts": {
     "prettier-index": "prettier --check index.js",
     "prettier-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check sample.js",
-    "prettier-correct-typescript-sample": "prettier --config ./sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check correct-typescript-sample.ts",
+    "prettier-correct-typescript-sample": "prettier --config ./correct-typescript-sample-prettierx-prettierrc --plugin=. --parser=prettierx-typescript --check correct-typescript-sample.ts",
     "lint-sample": "standard sample.js",
-    "test": "npm run prettier-index && npm run lint-sample && npm run prettier-sample"
+    "test": "npm run prettier-index && npm run lint-sample && npm run prettier-sample && npm run prettier-correct-typescript-sample"
   },
   "author": "@brodybits (Christopher J. Brody) <chris@brody.consulting>",
   "license": "MIT",
