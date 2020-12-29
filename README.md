@@ -1,5 +1,7 @@
 # prettier-plugin-prettierx-typescript
 
+__now superseded by: https://github.com/brodybits/prettier-plugin-x__
+
 Use TypeScript parser with enhanced estree printer from `prettierx`,
 all in a Prettier plugin.
 
